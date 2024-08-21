@@ -1,0 +1,12 @@
+package thuaKe;
+
+public class Test {
+	public static void main(String[] args) {
+		HinhHoc h1 = new HinhVuong("Hinh vuong", 20);
+		System.out.println("Dien tich hinh vuong: " + h1.getDienTich());
+		HinhHoc h2 = new HinhChuNhat("Hinh chu nhat", 20, 30);
+		System.out.println("Dien tich hinh chu nhat: " + h2.getDienTich());
+		
+	}
+
+}

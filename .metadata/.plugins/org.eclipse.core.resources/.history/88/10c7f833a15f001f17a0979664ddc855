@@ -1,0 +1,42 @@
+package thuaKe;
+
+public class HinhVuong extends HinhHoc {
+	private double canh;
+
+	
+	
+	public double getCanh() {
+		return canh;
+	}
+
+
+
+	public void setCanh(double canh) {
+		this.canh = canh;
+	}
+
+	public HinhVuong() {
+		
+	}
+
+	public HinhVuong(String tenHinh) {
+		super(tenHinh);
+		
+	}
+	
+	
+	public HinhVuong(String tenHinh ,double canh) {
+		super(tenHinh);
+		this.tenHinh = tenHinh;
+		this.canh = canh;
+	}
+
+
+
+	@Override
+	public double getDienTich() {
+		// TODO Auto-generated method stub
+		return  getCanh() * getCanh();
+	}
+
+}

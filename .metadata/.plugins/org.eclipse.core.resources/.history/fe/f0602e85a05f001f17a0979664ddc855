@@ -1,0 +1,25 @@
+package thuaKe;
+
+public abstract class HinhHoc {
+	protected String tenHinh;
+	
+	public String getTenHinh() {
+		return tenHinh;
+	}
+
+	public void setTenHinh(String tenHinh) {
+		this.tenHinh = tenHinh;
+	}
+	 public abstract double getDienTich();
+	 public HinhHoc() {}
+	 
+	 public HinhHoc(String tenHinh2) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+		public String toString() {
+			return super.toString();
+		}
+
+}
