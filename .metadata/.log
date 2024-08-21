@@ -64,3 +64,6 @@ java.lang.NullPointerException: Cannot read field "displayText" because the retu
 	at com.genuitec.copilot4eclipse.CopilotEditSession.handleCompletionResult(Unknown Source)
 	at com.genuitec.copilot4eclipse.CompletionJob.run(Unknown Source)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-08-21 17:02:18.603
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.genuitec.copilot4eclipse.chat.ui.JettyService$1
