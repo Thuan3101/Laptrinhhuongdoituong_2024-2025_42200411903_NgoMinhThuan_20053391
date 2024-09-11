@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Tai Lieu\Thuchanhoop\ThucHanhTuan3_20053391_NgoMinhThuan"/>
+			<item value="D:\Tai Lieu\Thuchanhoop\LyThuyetTuan5_NgoMinhThuan_20053391"/>
+			<item value="D:\Tai Lieu\Thuchanhoop\NgoMinhThuan_20053391_LyThuyetTuan5"/>
 			<item value="D:\Tai Lieu\Thuchanhoop\module2"/>
 			<item value="D:\Tai Lieu\Thuchanhoop\module3"/>
 			<item value="D:\Tai Lieu\Thuchanhoop\tuan2_20053391_NgoMinhThuan"/>
