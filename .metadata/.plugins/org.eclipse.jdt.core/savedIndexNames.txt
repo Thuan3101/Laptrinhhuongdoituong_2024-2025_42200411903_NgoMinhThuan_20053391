@@ -1,13 +1,9 @@
 INDEX VERSION 1.134+D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\org.eclipse.jdt.core
-47008796.index
-1615090997.index
-468543733.index
-1769143712.index
-763877766.index
-767308923.index
-3064392683.index
-1976204426.index
-2613321126.index
+635184527.index
+3149443116.index
+3419554979.index
+1390089497.index
 1865797976.index
-475549390.index
-3091838862.index
+1438044416.index
+1615090997.index
+3435102394.index
