@@ -1296,3 +1296,1499 @@ java.lang.NullPointerException: Cannot invoke "com.genuitec.copilot4eclipse.lsp.
 
 !ENTRY org.eclipse.core.jobs 2 2 2024-09-11 14:58:21.112
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.genuitec.copilot4eclipse.chat.ui.JettyService$1
+!SESSION 2024-09-25 16:02:41.933 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=22.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-25 16:03:39.680
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 4 567 2024-09-25 16:03:59.959
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-09-25 16:03:59.959
+!MESSAGE Could not read metadata for 'Tuan4_TH_20053391_NgoMinhThuan'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Tuan4_TH_20053391_NgoMinhThuan)[567]: java.lang.Exception: The project description file (.project) for 'Tuan4_TH_20053391_NgoMinhThuan' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2618)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2319)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-09-25 16:03:59.962
+!MESSAGE The project description file (.project) for 'Tuan4_TH_20053391_NgoMinhThuan' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'Tuan4_TH_20053391_NgoMinhThuan' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2618)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2319)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-25 16:04:00.389
+!MESSAGE Logback config file: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-25 16:04:00.892
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-25 16:04:00.892
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-25 16:04:01.223
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-25 16:04:01.223
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-25 16:04:07.455
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.2.v20240802-1626\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/Tai Lieu/Thuchanhoop/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1727255047454
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Admin\eclipse\jee-2024-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:04:07.456
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-25 16:04:07.465
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 22788
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-25 16:04:10.508
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:11.428
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:11.439
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:315)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:04:11.952
+!MESSAGE Classpath changed for project: LyThuyetTuan3_KeThua_DongGoi_DaHinh
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:04:11.953
+!MESSAGE Classpath changed for project: LyThuyetTuan4_Mang
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:04:11.955
+!MESSAGE Classpath changed for project: Tuan3_TH_20053391_NgoMinhThuan_
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:04:11.958
+!MESSAGE Classpath changed for project: tuan2_20053391_NgoMinhThuan
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:12.820
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:12.823
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:315)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:13.009
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:13.011
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:315)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:13.131
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:13.133
+!MESSAGE Failed to init packages for Classpath jrt file C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:239)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.lambda$1(ClasspathJrt.java:133)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1742)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.loadModules(ClasspathJrt.java:129)
+	at org.eclipse.jdt.internal.core.builder.ClasspathJrt.<init>(ClasspathJrt.java:67)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:177)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:315)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-09-25 16:04:13.298
+!MESSAGE Exception while reading last build state for: P/tuan2_20053391_NgoMinhThuan
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error reading last build state for project tuan2_20053391_NgoMinhThuan
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4224)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Failed to detect JDK release for: C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:169)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	... 17 more
+Caused by: java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJdkRelease(JRTUtil.java:344)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:167)
+	... 21 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 2 2024-09-25 16:04:13.300
+!MESSAGE Error reading last build state for project tuan2_20053391_NgoMinhThuan
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to detect JDK release for: C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:169)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJdkRelease(JRTUtil.java:344)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:167)
+	... 21 more
+!SUBENTRY 2 org.eclipse.jdt.core 4 0 2024-09-25 16:04:13.301
+!MESSAGE Failed to detect JDK release for: C:\Program Files\Java\jdk-19\lib\jrt-fs.jar
+!STACK 0
+java.nio.file.NoSuchFileException: C:\Program Files\Java\jdk-19\release
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.readJdkReleaseFile(JRTUtil.java:491)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.lambda$0(JRTUtil.java:445)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.eclipse.jdt.internal.compiler.util.Jdk.<init>(JRTUtil.java:443)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJrtSystem(JRTUtil.java:122)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getJdkRelease(JRTUtil.java:344)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:167)
+	at org.eclipse.jdt.internal.core.builder.State.readBinaryLocations(State.java:426)
+	at org.eclipse.jdt.internal.core.builder.State.read(State.java:312)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.readState(JavaBuilder.java:163)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readStateTimed(JavaModelManager.java:4216)
+	at org.eclipse.jdt.internal.core.JavaModelManager.readState(JavaModelManager.java:4197)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getLastBuiltState(JavaModelManager.java:2378)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.getLastState(JavaBuilder.java:472)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:194)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 16:04:13.346
+!MESSAGE EdgeDataDir: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\com.genuitec.copilot4eclipse\edgedata
+
+!ENTRY com.genuitec.copilot4eclipse 2 0 2024-09-25 16:04:13.899
+!MESSAGE Timeout while checking Copilot status
+
+!ENTRY com.genuitec.copilot4eclipse 2 0 2024-09-25 16:04:14.957
+!MESSAGE Timeout while checking Copilot status
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 16:05:13.989
+!MESSAGE Persistence: C:\Users\Admin\AppData\Local\github-copilot
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 16:05:14.306
+!MESSAGE Jetty server started: true uri: http://192.168.0.7:58253/chat
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 16:05:19.037
+!MESSAGE Workspace labels: java
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:05:45.709
+!MESSAGE Classpath changed for project: Tuan4_TH_20053391_NgoMinhThuan
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:05:46.048
+!MESSAGE Classpath changed for project: Tuan4_TH_20053391_NgoMinhThuan
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:06:18.044
+!MESSAGE Classpath changed for project: module4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:06:18.078
+!MESSAGE Classpath changed for project: module4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:07:32.763
+!MESSAGE Classpath changed for project: LyThuyetTuan8_NgoMinhThuan_20053391_36
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-25 16:08:27.568
+!MESSAGE Classpath changed for project: module4
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 17:20:09.027
+!MESSAGE Jetty server stopped: Server@5ec53df9{STOPPED}[10.0.20,sto=0]
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-09-25 17:20:09.028
+!MESSAGE Jetty server stopped: true
+!SESSION 2024-10-02 12:49:24.263 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=22.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\Tai Lieu\Thuchanhoop
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-02 12:49:26.762
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-02 12:49:28.126
+!MESSAGE Logback config file: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-10-02 12:49:28.635
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-02 12:49:28.635
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-10-02 12:49:28.978
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-02 12:49:28.978
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-02 12:49:33.180
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.2.v20240802-1626\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/Tai Lieu/Thuchanhoop/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1727848173179
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Admin\eclipse\jee-2024-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 12:49:33.181
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-02 12:49:33.199
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 32240
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-02 12:49:34.932
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-10-02 12:49:36.152
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:49:36.347
+!MESSAGE EdgeDataDir: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\com.genuitec.copilot4eclipse\edgedata
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 12:50:29.282
+!MESSAGE Classpath changed for project: Tuan1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 12:50:29.428
+!MESSAGE Classpath changed for project: Tuan1
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:50:50.500
+!MESSAGE Persistence: C:\Users\Admin\AppData\Local\github-copilot
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:50:50.832
+!MESSAGE Jetty server started: true uri: http://172.28.85.102:55085/chat
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:50:55.544
+!MESSAGE Workspace labels: java
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:52:46.710
+!MESSAGE Jetty server stopped: Server@5409c4c1{STOPPED}[10.0.20,sto=0]
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:52:46.711
+!MESSAGE Jetty server stopped: true
+!SESSION 2024-10-02 12:54:40.343 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=22.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-02 12:54:44.384
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-10-02 12:54:57.770
+!MESSAGE Logback config file: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-10-02 12:54:58.209
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-02 12:54:58.209
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-10-02 12:54:58.651
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-02 12:54:58.651
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-02 12:55:02.299
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\Admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.2.v20240802-1626\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/Tai Lieu/Thuchanhoop/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1727848502298
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\Users\Admin\eclipse\jee-2024-09\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 12:55:02.299
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-10-02 12:55:02.311
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 18280
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-02 12:55:03.981
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:55:05.346
+!MESSAGE EdgeDataDir: D:\Tai Lieu\Thuchanhoop\.metadata\.plugins\com.genuitec.copilot4eclipse\edgedata
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:55:23.155
+!MESSAGE Persistence: C:\Users\Admin\AppData\Local\github-copilot
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:55:23.508
+!MESSAGE Jetty server started: true uri: http://172.28.85.102:55166/chat
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 12:55:28.166
+!MESSAGE Workspace labels: java
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 12:59:37.265
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 13:00:57.444
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan6
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 13:02:22.570
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:24:13.127
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.eclipse.core.resources 4 1 2024-10-02 14:24:40.602
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2024-10-02 14:24:40.602
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1043)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1023)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:402)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:227)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: The project description file (.project) for 'Stt_36_20053391_NgoMinhThuan_Th_Tuan7' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+java.lang.Exception: The project description file (.project) for 'Stt_36_20053391_NgoMinhThuan_Th_Tuan7' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1429)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:500)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1040)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1023)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:402)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:227)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2024-10-02 14:24:40.603
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2024-10-02 14:24:40.603
+!MESSAGE The project description file (.project) for 'Stt_36_20053391_NgoMinhThuan_Th_Tuan7' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'Stt_36_20053391_NgoMinhThuan_Th_Tuan7' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1429)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:500)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:126)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1040)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1023)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:402)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:227)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:24:47.579
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:24:47.608
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:24:47.608
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:25:46.491
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:26:45.272
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.eclipse.jdt.debug.ui 4 150 2024-10-02 14:27:08.227
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: InvocationTargetException
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:164)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.searchAndLaunch(JavaLaunchShortcut.java:115)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.launch(JavaLaunchShortcut.java:274)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:94)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:146)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1206)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:396)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:977)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:165)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:162)
+	... 38 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 1 org.eclipse.jdt.debug.ui 4 0 2024-10-02 14:27:08.229
+!MESSAGE InvocationTargetException
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:396)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:977)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:165)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:162)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.searchAndLaunch(JavaLaunchShortcut.java:115)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.launch(JavaLaunchShortcut.java:274)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:94)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:146)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1206)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.eclipse.jdt.debug.ui 4 150 2024-10-02 14:27:15.092
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: InvocationTargetException
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:164)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.searchAndLaunch(JavaLaunchShortcut.java:115)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.launch(JavaLaunchShortcut.java:274)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:94)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:146)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1206)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:396)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:977)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:165)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:162)
+	... 38 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+!SUBENTRY 1 org.eclipse.jdt.debug.ui 4 0 2024-10-02 14:27:15.093
+!MESSAGE InvocationTargetException
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:396)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.progress.ProgressManager.lambda$26(ProgressManager.java:819)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:849)
+	at org.eclipse.ui.internal.progress.ProgressManager.busyCursorWhile(ProgressManager.java:828)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:977)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:165)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaApplicationLaunchShortcut.findTypes(JavaApplicationLaunchShortcut.java:162)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.searchAndLaunch(JavaLaunchShortcut.java:115)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaLaunchShortcut.launch(JavaLaunchShortcut.java:274)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:412)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:94)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:146)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1198)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1183)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:853)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1206)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.env.IModule.isAutomatic()" because "module" is null
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryModuleBinding.create(BinaryModuleBinding.java:101)
+	at org.eclipse.jdt.internal.compiler.impl.ITypeRequestor.accept(ITypeRequestor.java:65)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModuleFromAnswer(LookupEnvironment.java:479)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:416)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:278)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveTypeFor(BinaryTypeBinding.java:1939)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.getField(BinaryTypeBinding.java:1522)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1440)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findField(Scope.java:1386)
+	at org.eclipse.jdt.internal.compiler.lookup.MethodScope.findField(MethodScope.java:473)
+	at org.eclipse.jdt.internal.compiler.lookup.BlockScope.getBinding(BlockScope.java:612)
+	at org.eclipse.jdt.internal.compiler.ast.QualifiedNameReference.resolveType(QualifiedNameReference.java:1031)
+	at org.eclipse.jdt.internal.compiler.ast.AllocationExpression.resolveType(AllocationExpression.java:427)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:402)
+	at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:258)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:498)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:713)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:409)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:611)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1514)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1643)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:666)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2037)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1366)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1403)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1546)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:134)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:251)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:595)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:669)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine.searchMainMethods(MainMethodSearchEngine.java:93)
+	at org.eclipse.jdt.internal.debug.ui.launcher.MainMethodSearchEngine$1.run(MainMethodSearchEngine.java:162)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:28:25.768
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:28:25.768
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan777
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:28:25.788
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:28:25.788
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:28:25.789
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:28:25.789
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:28:45.717
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:29:27.524
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:29:27.524
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan777
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:29:27.529
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan777 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:29:27.529
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan777 does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:29:27.530
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan777 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:29:27.531
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan777 does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-10-02 14:29:27.538
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2611)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2352)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2395)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-10-02 14:29:27.539
+!MESSAGE Stt_36_20053391_NgoMinhThuan_Th_Tuan7 does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-10-02 14:29:48.726
+!MESSAGE Classpath changed for project: Stt_36_20053391_NgoMinhThuan_Th_Tuan7
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 14:31:00.687
+!MESSAGE Chat App Path: http://localhost:55166/chat/chat.html?chatSessionId=1727854259267
+
+!ENTRY com.genuitec.copilot4eclipse.chat 1 0 2024-10-02 14:31:02.466
+!MESSAGE Theme: {"--background2":"#f2f2f2","--border":"#dfdfdf","--foreground":"#000000","--image":"#202020","--background1":"#ffffff","--code-font":"Consolas","--code-font-size":"12px","--disabled":"gray","--code-background":"#2C2F32","--font":"\"Segoe UI Variable\",\"Segeo UI\"","--font-size":"12px","--code":"darkviolet"}
+
+!ENTRY com.genuitec.copilot4eclipse.chat 4 0 2024-10-02 14:41:00.049
+!MESSAGE Error in WebSocket connection
+!STACK 0
+java.nio.channels.ClosedChannelException
+	at org.eclipse.jetty.websocket.core.internal.WebSocketSessionState.onEof(WebSocketSessionState.java:169)
+	at org.eclipse.jetty.websocket.core.internal.WebSocketCoreSession.onEof(WebSocketCoreSession.java:253)
+	at org.eclipse.jetty.websocket.core.internal.WebSocketConnection.fillAndParse(WebSocketConnection.java:491)
+	at org.eclipse.jetty.websocket.core.internal.WebSocketConnection.onFillable(WebSocketConnection.java:349)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100)
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
